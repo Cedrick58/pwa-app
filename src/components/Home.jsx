@@ -76,7 +76,7 @@ const Main = () => {
 
       console.log("Enviando a suscripción:", user.suscripcion);
 
-      const response = await fetch("https://backend-be7l.onrender.com/auth/suscripcionMod", {
+      const response = await fetch("https://pwa-api-47hz.onrender.com/save-subscription", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ suscripcion: user.suscripcion, mensaje: message }),
