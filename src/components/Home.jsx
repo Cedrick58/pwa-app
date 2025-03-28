@@ -17,7 +17,7 @@ const Main = () => {
         return;
       }
       try {
-        const response = await fetch("https://pwa-api-47hz.onrender.com/login");
+        const response = await fetch("https://pwa-api-47hz.onrender.com/save-subscription");
         if (!response.ok) throw new Error("Error al obtener los usuarios");
 
         const data = await response.json();
