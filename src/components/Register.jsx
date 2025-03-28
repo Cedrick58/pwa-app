@@ -34,7 +34,7 @@ const Register = () => {
         const userData = { username, password };
 
         try {
-            const response = await axios.post('pwa-api-47hz.onrender.com/register', userData);
+            const response = await axios.post('https://pwa-api-47hz.onrender.com/register', userData);
             setMessage(response.data.message);
         } catch (error) {
             insertIndexedDB(userData);
